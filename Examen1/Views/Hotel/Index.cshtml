@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Examen1.Models.Hotel>
+
+@{
+    Layout = "_Layout";
+}
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nom</th>
+            <th>Ville</th>
+            <th>Nombre de chambres</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.NoEnregistrement
+            </td>
+            <td>
+                @item.Nom
+            </td>
+            <td>
+                @item.Ville
+            </td>
+            <td>
+                @item.NbChambres
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

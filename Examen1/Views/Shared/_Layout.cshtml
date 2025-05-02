@@ -1,0 +1,23 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hôtels</title>
+</head>
+<body>
+    <h1>Nos meilleurs hôtels</h1>
+    <nav>Rechercher : 
+          <a href="~/">Tout les hôtels</a> 
+        | <a href="~/Gatineau">Gatineau</a>
+        | <a href="~/Ottawa">Ottawa</a> 
+        | <a href="~/Hilton">Hilton</a>
+    </nav>
+    <br />
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
